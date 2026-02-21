@@ -1,0 +1,74 @@
+{
+  "manifest_version": 3,
+  "name": "Token Platform Switch",
+  "version": "1.0.0",
+  "description": "Instantly navigate between crypto token platforms with automatic address transfer. One-click switching, no copy-pasting.",
+  "author": "Token Platform Switch",
+  "homepage_url": "https://tokenplatformswitch.fun",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Token Platform Switch"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://pump.fun/*",
+    "https://gmgn.ai/*",
+    "https://dexscreener.com/*",
+    "https://solscan.io/*",
+    "https://birdeye.so/*",
+    "https://raydium.io/*",
+    "https://jup.ag/*",
+    "https://*.bubblemaps.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pump.fun/*",
+        "https://gmgn.ai/*",
+        "https://dexscreener.com/*",
+        "https://solscan.io/*",
+        "https://birdeye.so/*",
+        "https://raydium.io/*",
+        "https://jup.ag/*",
+        "https://*.bubblemaps.io/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/pump-favicon.ico",
+        "icons/gmgn-favicon.ico",
+        "icons/dex-favicon.ico",
+        "icons/solscan-favicon.ico",
+        "icons/birdeye-favicon.ico",
+        "icons/raydium-favicon.ico",
+        "icons/jupiter-favicon.ico",
+        "icons/bubblemaps-favicon.ico",
+        "icon48.png"
+      ],
+      "matches": [
+        "https://pump.fun/*",
+        "https://gmgn.ai/*",
+        "https://dexscreener.com/*",
+        "https://solscan.io/*",
+        "https://birdeye.so/*",
+        "https://raydium.io/*",
+        "https://jup.ag/*",
+        "https://*.bubblemaps.io/*"
+      ]
+    }
+  ]
+}
