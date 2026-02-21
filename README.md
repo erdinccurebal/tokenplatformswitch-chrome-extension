@@ -44,7 +44,9 @@
 
 ### From Chrome Web Store
 
-Visit the [Chrome Web Store listing](https://tokenplatformswitch.fun) (if available).
+Install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/token-platform-switch/glpalemkadimdlhobchgacallpffecnc).
+
+You can also visit the website at [tokenplatformswitch.fun](https://tokenplatformswitch.fun).
 
 ## Usage
 
